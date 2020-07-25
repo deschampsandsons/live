@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, height=device-height">
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Philosopher|Raleway|Quintessential&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="icons/favicon.png">
+    <title>Northern Reach Web Services - Custom Websites and Web Management for Northern NH</title>
+    <!--Hey if you're reading this and want to collaborate on a project, hit me up! tim@northernreachnh.com-->
+  </head>
+  <body>
+  
+    <!--PreLoad Screen-->
+    <div class="loader">
+      <p class="loaderText" style="font-family: monospace;">Loading...</p>  
+    </div> 
+    
+    <!--PreLoad Screen-->
+     <div class="bodyWrapper" id="pageTop">
+    <!--Main Navigation-->
+    <div id="fixedNavBar" class="container-fluid p-0 m-0">
+    <nav class="navbar navbar-expand-lg navbar-dark p-0 m-0 section-shadow3 text-left">
+        <a class="navbar-brand pl-1 pt-1 pb-2" href="#intro">
+        <img id="logo" src="images/logo2.png">
+        </a>
+        <div class="buttons">
+            <button id="hamburger" class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold text-center navbarLink" href="#parallax">Contact</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link font-weight-bold text-center navbarLink" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold text-center navbarLink" href="#aboutMe">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold text-center navbarLink" href="#faq">FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!--Main Navigation-->
+
+    <!--Main Layout-->
+    <div id="intro" class="align-items-center d-flex justify-content-center">
+      <div class="text-center landing">
+        <h1 class="mx-4 mb-2 pageHeading">Northern Reach</h1>
+        <h2 class="pageHeading">Web Services</h2>
+        <hr>
+        <h3 id="building" class="my-4">Building websites for Northern NH</h3>
+        <a href="#parallax"><button type="button" class="btn mt-3 px-3" id="ctaButton">Let's talk about your website!</button></a> 
+      </div>
+    </div>
+
+  <section id="salesPitch" class="container-fluid">
+    <div class="row d-flex pt-3">
+      <div class="col-sm-4 text-center">
+          <img class="m-4" src="icons/team.png"  width="50%">
+        <p class="text-center">
+          It's more essential than ever to have the right online presence for your business or organization.
+          Reach more people, leave great impressions and grow your business with a custom website!
+        </p>
+      </div>
+      <div class="col-sm-4 text-center">
+        <img class="m-4" src="icons/coding.png"  width="50%">
+        <p class="text-center pt-md-3">
+          Already have a website and not 100% happy with how it looks? Need someone to keep your website up to date?
+          Our webmaster services will take complete care of your website while you run your business.
+        </p>
+      </div>
+      <div class="col-sm-4 text-center">
+        <img class="m-4" src="icons/peakmountain.png"  width="40%">
+        <p class="text-center">
+        We live and work in the North Country every day. <em>Our focus is serving
+        local clients.</em>  Our passion is helping our community to grow and succeed.
+        </p>
+      </div>
+    </div>
+    <div id="northCountry" class="d-flex py-5 pb-3 justify-content-center align-items-center">
+      <img src="icons/northcountry.png" height="100px">
+  <p class="ml-3 text-center">
+    <span>Websites built and serviced by us: <br> <a href="https://www.gorhamlibrary.org">Gorham Public Library</a>
+      <br> <a href="https://limitlessplayground.com">Limitless Playground</a> <br>
+      <a href="https://www.northcountryhelpers.com">*NEW* North Country Helpers</a>
+      <br> <br> My portfolio website: <br> <a href="https://timothy.work">timothy.work</a>
+    </span>
+  </p>
+  </div>
+  </section>
+     
+ <div id="parallax" class="py-5 section-shadow-inset">
+  <section id="contactUs" class="container-fluid align-items-center pt-2">
+    <h3 class="text-center mb-3 serviceHead">Contact Us</h3>
+    <div class="text-center serviceHead1">
+        <a class="" href="tel:1-603-915-0869">603.915.0869</a>
+    </div>
+    <div class="contactIcons mt-2 serviceHead1 d-flex justify-content-center">
+      <a href="https://www.facebook.com/northernreachnh"><img class="pr-2" src="icons/facebook.svg" style="height: 30px;"></a>
+      <a href="mailto:tim@northernreachnh.com"><p class="pl-2">E-mail</p></a>
+    </div> 
+    <form name="contact" method="POST" action="/contact" role="form">
+      <div class="pt-2 inputField">
+        <input name="name" type="text" class="text-center"  required>
+        <label class="mt-2">Name</label>
+        <span></span>
+      </div>
+      <div class="pt-2 inputField">
+          <input name="email" type="email" class="text-center" required>
+          <label class="mt-2">E-mail</label>
+          <span></span>
+        </div>
+        <div class="pt-2 inputField">
+            <input name="tel" type="tel" class="text-center" required>
+            <label class="mt-2">Phone #</label>
+            <span></span>
+          </div>
+         <div class="mt-4 d-flex justify-content-center align-items-center">
+            <input id="submitBtn" type="submit" name="" value="Submit" class="px-5">
+            
+        </div>     
+        <div class="d-flex justify-content-center align-items-start">
+          <img src="icons/letsencrypt.png" style="height: 45px;">
+        </div>
+    </form>
+
+    </section>
+  </div>
+
+  <section class="pt-3 pb-5 align-items-center text-white text-center" id="services">
+    <h3 class="mb-2 serviceHead">Our Services</h3>
+     <div id="serviceMenu" class="d-flex justify-content-around justify-content-md-center align-items-center text-center text-white pt-3 pb-4">
+        <span id="customBtn" class="mr-md-4 py-1 px-2 servBtn serviceSelected">Custom Websites</span>
+        <span id="webmasterBtn" class="py-1 px-2 servBtn" >Web Management</span>
+        <span id="moreBtn" class="ml-md-4 py-1 px-2 servBtn">IT Consulting</span>
+        </div>
+        
+  <div>
+    <div id="serviceCard1" class="mx-auto p-3 servCard servCardShow">
+    
+      <h3 class="text-center serviceHead">Custom Built Websites</h3>
+        <h5 class="text-center">
+            We won't stop working until it's a website that you love.
+        </h5>
+      <ul>
+        <li>Responsive - mobile first designs: over 50% of web traffic is from mobile devices! Look great on any screen.</li>
+        <li>Coded from scratch - our sites are completely customizable for pixel-perfect designs.</li>
+        <li>Personalized - we take the time to get to know your organization's goals and vision, for a site that's unique to you.</li>
+      </ul>
+      
+      </div>
+  <div id="serviceCard2" class="mx-auto p-3 servCard">
+   
+    <h3 class="text-center serviceHead">
+        Web Management and Webmaster Services
+    </h3>
+    <h5 class="text-center">Let us care for your website so you can focus on your business!</h5>
+      <ul>
+        <li>Server maintenance and administration</li>
+        <li>Design changes and website overhauls</li>
+        <li>Content updates and copy-writing</li>
+        <li>Online marketing strategies</li>
+      </ul>
+    
+  </div>
+  <div id="serviceCard3" class="mx-auto p-3 text-center servCard">
+      <h3 class="text-center serviceHead">
+          IT Consultations
+      </h3>
+    <p class="text-center">
+      Have a technology or computer related need? Just ask!
+      <ul>
+        <li>Streamline business tasks with custom software</li>
+        <li>System and network design</li>
+        <li>Social media management</li>
+        <li>Project management support</li>
+      </ul>
+      If it's a problem outside of our expertise we will always point you in the right direction.
+    </p>
+    
+  </div>
+</div>
+</section>
+<section class="pt-1 pt-m-5 section-shadow-inset" id="aboutMe">
+    <div id="aboutUsCard" class="pb-5 pt-5 container">
+      <div class="row">
+        <div class="col-md-3 text-center">
+          <img id="familyPic" src="images/family.jpg" class="section-shadow2">
+        </div>
+        <div class="col-md-9 text-center px-md-5">
+          <p id="aboutText" class="pt-4 ml-md-4 ml-0 ml-sm-0">
+            Hi, my name is Tim Deschamps, Jr. I am a dad, husband and self-taught web developer.
+            Our family moved to Northern NH in 2015 and we have since come to call the North Country our home. When I'm not working on a web project, 
+            you can usually find me hiking with our dog or hanging out with my two sons. Even if you just need some friendly tech advice, always feel free to give me a call. 
+           And if you decide to work with us, you can trust that we will do our best to create the right online presence to grow your organization. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!--FAQ-->
+  <section class="faq p-3" id="faq">
+    <div class="container">
+    <h3 class="my-5 serviceHead">FAQ</h3>
+    <h5 class="text-left my-5">I have a website that was built several years ago, why should I upgrade it?</h5>
+    <p class="text-right my-4">
+      Design trends and internet usage patterns are constantly changing. Chances are, if your website is more than a few years old,
+       it looks outdated and is unlikely to be designed to look good on both mobile devices and desktops. 
+       Mobile devices could be 50% or more of your website’s traffic! 
+       Our web designs are responsive, meaning
+       they will have a specific layout for mobile devices and another layout for bigger screens like desktops. Your site will look great on any device.
+       </p>
+    <h5 class="text-left my-5">Isn’t local advertising and word of mouth enough marketing for my business?</h5>
+    <p class="text-right my-4">
+        Some businesses can sustain themselves and even grow simply through word of mouth and well-placed local advertising.
+        However, more and more people are looking online first when deciding where to spend their money. Being there when they do with a modern,
+        professional looking website will allow you to stand out against the competition. All those tourists visiting
+        the North Country will be looking online first as well!
+    </p>
+    <h5 class="text-left my-5">Can’t I build my own website with a service like Squarespace?</h5>
+      <p class="text-right my-4">
+        You can, with a fair bit of learning and time. This requires you to manage every aspect of the website (domain, hosting, private email...) 
+        and learn how to use the website building software.
+        You would also be stuck with whatever templates, fonts and features the service provides you. 
+        Our custom websites are coded from scratch, so you have complete creative freedom to design your website 
+        exactly how you want it - no cookie cutter websites here. 
+      <div class="text-center my-4">
+        <a href="#parallax"><button type="button" class="btn my-3 px-5" id="ctaButton">Let's talk!</button></a>
+      </div>
+    </div>
+  </section>
+<!--FAQ-->
+
+    <!--Main layout-->
+
+    <!--Footer-->
+    <div class="footer section-shadow-inset">
+      <div class="container">
+
+        <div class="text-left pt-3 pb-1">
+            
+          <p><a class="nav-link" href="#parallax">Contact Us</a></p> 
+          <p><a class="nav-link" href="#services">Services</a></p> 
+          <p><a class="nav-link" href="mailto:tim@northernreachnh.com">E-Mail</a></p> 
+          <p><a class="nav-link" href="tel:1-603-915-0869">603.915.0869</a></p> 
+          
+        </div>
+      </div>
+      <div class="container text-center">
+          <form name="contact" method="POST" action="/contact" role="form">
+            <span class="text-weight-bold"> <strong>Sign up for our newsletter for helpful tips on websites, online marketing and more:</strong></span> <br>
+            <input class="my-2 footer-email" name="email" type="email" class="text-center" placeholder="Your email" required>
+            <input class="mr-2" id="submitBtn" type="submit" name="" value="Submit" class="px-5">
+          </form>
+      </div>
+      <div class="text-center pt-3 pb-1">
+        <p>&copy; 2020 NRWS
+        </p>
+      </div>
+      </div>
+    
+    <!--Footer-->
+
+  </div>
+  <a href="#pageTop"><img id="upImage" src="icons/compassnorth1.png"></a>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script> 
+   </body>
+</html>
