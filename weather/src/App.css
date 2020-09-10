@@ -1,0 +1,61 @@
+html,
+body {
+  margin: 0;
+  padding: 0.25rem 0;
+  background-color: rgb(200, 223, 250);
+  background-size: cover;
+  background-position: bottom;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h3 {
+  font-size: 2.2rem !important;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.app {
+  transition: 0.4 ease;
+}
+
+.heading-container {
+  display: flex;
+  justify-content: center;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.details-container {
+  margin: 1rem 0 1rem 1rem;
+}
+
+.hourly-container {
+  text-align: center;
+}
+
+.daily-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 0 2rem 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0 0 0;
+}
+
+@media screen and (min-width: 900px) {
+  .details-container {
+    margin: 1rem 0 1rem 5rem;
+  }
+}
