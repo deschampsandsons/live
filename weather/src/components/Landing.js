@@ -11,11 +11,11 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
 const weatherApi = {
-  key: 'd43c6999d1206076840b904860013155',
+  key: '',
   base: 'https://api.openweathermap.org/data/2.5/',
 };
 
-const locationApiKey = '267c47b1d69f47';
+const locationApiKey = '';
 
 const Landing = () => {
   const [coordinates, setCoordinates] = useState([]);
